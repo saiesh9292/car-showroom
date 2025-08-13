@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATIL MOTORS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #4197f3, #6c757d);">
+        <div class="container">
+            <!-- Logo in the navbar -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.webp" alt="KHAN MOTORS" height="60">
+                <span class="ms-2"
+                    style="color: white; font-family: 'Georgia', serif; font-size: 1.5rem; text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5);">PATIL
+                    MOTORS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            style="color: white; font-weight: bold; letter-spacing: 1px; transition: all 0.3s ease;">
+                            <span style="text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5);">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#about"
+                            style="color: white; font-weight: bold; letter-spacing: 1px; transition: all 0.3s ease;">
+                            <span style="text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5);">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cars"
+                            style="color: white; font-weight: bold; letter-spacing: 1px; transition: all 0.3s ease;">
+                            <span style="text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5);">Car</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"
+                            style="color: white; font-weight: bold; letter-spacing: 1px; transition: all 0.3s ease;">
+                            <span style="text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5);">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <div id="Home" class="hero-section">
+        <h1><strong>Welcome to
+                <span
+                    style="color: #007bff; text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5); font-family: 'Georgia', serif;">
+                    PATIL MOTORS
+                </span>
+            </strong>
+        </h1>
+        <p><i>Buy and Sell Cars</i></p>
+        <a href="#cars" class="btn btn-primary btn-lg">Explore Cars</a>
+    </div>
+
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center"><span
+                style="color: black; text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5); font-family: 'Georgia', serif;">
+                About
+            </span></h2>
+        <div class="row mt-4 align-items-center">
+            <!-- Showroom Image -->
+            <div class="col-md-6">
+                <img src="About-pic.jpg" class="img-fluid rounded" alt="Khan Motors Showroom">
+            </div>
+            <!-- Description -->
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0" style="transform: rotateY(0deg); perspective: 1000px;">
+                    <div class="card-body">
+                        <p class="card-text ">
+                            <i><span
+                                    style="color: #007bff; text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5); font-family: 'Georgia', serif;">
+                                    PATIL MOTORS
+                                </span> is a renowned car dealership offering a wide range of new
+                                and pre-owned vehicles.
+                                With a commitment to quality and customer satisfaction, our state-of-the-art showroom
+                                provides
+                                a welcoming environment for car enthusiasts. Whether you're looking to buy or sell, we
+                                ensure
+                                a seamless and trustworthy experience.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Cars Section -->
+    <section id="cars" class="container py-5">
+        <h2 class="text-center"><span
+                style="color: black; text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5); font-family: 'Georgia', serif;">
+                Our Cars
+            </span></h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car1.jpeg" class="card-img-top" alt="Car 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Car No 01</h5>
+                        <p class="card-text">Description of Car No 1.</p>
+                        <button class="btn btn-primary"
+                            onclick="showDetails('Car No 01', 'Toyota', '$20,000', 'Sedan 2023')">View Details</button>
+                        <div class="car-details mt-3 d-none">
+                            <p><strong>Company:</strong> Toyota</p>
+                            <p><strong>Price:</strong> $20,000</p>
+                            <p><strong>Model:</strong> Sedan 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car2.jpg" class="card-img-top" alt="Car 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Car No 02</h5>
+                        <p class="card-text">Description of Car No 2.</p>
+                        <button class="btn btn-primary"
+                            onclick="showDetails('Car No 02', 'Honda', '$25,000', 'SUV 2022')">View Details</button>
+                        <div class="car-details mt-3 d-none">
+                            <p><strong>Company:</strong> Honda</p>
+                            <p><strong>Price:</strong> $25,000</p>
+                            <p><strong>Model:</strong> SUV 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="car3.jpg" class="card-img-top" alt="Car 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Car No 03</h5>
+                        <p class="card-text">Description of Car No 3.</p>
+                        <button class="btn btn-primary"
+                            onclick="showDetails('Car No 03', 'Ford', '$30,000', 'Coupe 2021')">View Details</button>
+                        <div class="car-details mt-3 d-none">
+                            <p><strong>Company:</strong> Ford</p>
+                            <p><strong>Price:</strong> $30,000</p>
+                            <p><strong>Model:</strong> Coupe 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                <span
+                    style="color: black; text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.5); font-family: 'Georgia', serif;">
+                    Contact Us
+                </span>
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="mt-4 shadow-lg p-4 rounded bg-white">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Navigation Section -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase mb-3">Explore</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#Home" class="nav-link p-0 text-white">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#about" class="nav-link p-0 text-white">About</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#cars" class="nav-link p-0 text-white">Cars</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#contact" class="nav-link p-0 text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Footer Contact/Call to Action Section -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Contact Us</h5>
+                    <p>Looking for your dream car? Reach out today and let us help you find it!</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> info@patilmotors.com</li>
+                        <li><strong>Phone:</strong> +123-456-7890</li>
+                        <li><strong>Address:</strong> 123 Car Street, City, Country</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="col-md-5 mb-4">
+                    <h5 class="text-uppercase mb-3">Stay Updated</h5>
+                    <p>Sign up for our newsletter to get the latest updates on new arrivals, offers, and promotions!</p>
+                    <form>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <input id="newsletter" type="email" class="form-control" placeholder="Enter your email"
+                                required>
+                            <button class="btn btn-primary mt-2 mt-sm-0" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 PATIL MOTORS. All rights reserved. Designed with passion.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showDetails(carName, company, price, model) {
+            // Find the car-details div for the specific car
+            var carDetails = event.target.nextElementSibling;
+
+            // Toggle the visibility of the details
+            if (carDetails.classList.contains('d-none')) {
+                carDetails.classList.remove('d-none');  // Show details
+                event.target.textContent = "Hide Details";  // Change button text
+            } else {
+                carDetails.classList.add('d-none');  // Hide details
+                event.target.textContent = "View Details";  // Change button text
+            }
+
+            // Optional: Dynamically update the details text (if you want to use the passed info)
+            carDetails.querySelector('p:nth-of-type(1)').innerHTML = '<strong>Company:</strong> ' + company;
+            carDetails.querySelector('p:nth-of-type(2)').innerHTML = '<strong>Price:</strong> ' + price;
+            carDetails.querySelector('p:nth-of-type(3)').innerHTML = '<strong>Model:</strong> ' + model;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .hero-section {
+            background-image: url(bg-img.jpeg);
+            background-size: cover;
+            background-position: center;
+            color: black;
+            padding: 100px 0;
+            text-align: center;
+            width: 100vw; /* Full viewport width */
+            margin-left: calc(50% - 50vw); /* Adjust to break out of container constraints */
+        }
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding-top: 2rem;
+        }
+        
+        .footer h5 {
+            font-weight: bold;
+            color: #007bff; /* Orange accent color */
+            text-transform: uppercase;
+        }
+        
+        .footer a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        
+        .footer .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .footer .btn-primary:hover {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .footer ul li {
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+        
+        .footer p {
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+        
+    
